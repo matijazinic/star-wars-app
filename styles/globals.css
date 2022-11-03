@@ -1,26 +1,41 @@
+@font-face {
+  font-family: "StarJedi";
+  src: url(../fonts/Starjedi.ttf);
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.ff-sw {
+  font-family: Starjedi, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif !important;
+  text-transform: lowercase;
 }
 
-* {
-  box-sizing: border-box;
+.home-card-image {
+  height: 300px;
+  object-fit: cover;
+  filter: blur(0.4rem) brightness(0.5);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.home-card-title {
+  font-size: clamp(3rem, 2.6rem + 2vw, 5rem) !important;
+  /* background-color: hsla(0, 0%, 0%, 0.5); */
+}
+
+.home-card {
+  transition: 200ms ease;
+  cursor: pointer;
+}
+
+.home-card:hover {
+  scale: 1.05;
+}
+
+.card-view-image {
+  height: 300px;
+  object-fit: cover;
 }

@@ -1,0 +1,44 @@
+import React from "react";
+
+export default function ShipDetails({ data }) {
+  return (
+    <>
+      <p>
+        <span className="fw-bold fs-5">Name: </span>
+        {data.name}
+      </p>
+      <p>
+        <span className="fw-bold fs-5">Model: </span>
+        {data.model}
+      </p>
+      <p>
+        <span className="fw-bold fs-5">Manufacturer: </span>
+        {data.manufacturer}
+      </p>
+      <p>
+        <span className="fw-bold fs-5">Starship class: </span>
+        {data.starship_class}
+      </p>
+      <p>
+        <span className="fw-bold fs-5">Cargo capacity: </span>
+        {data.cargo_capacity}
+      </p>
+      <p>
+        <span className="fw-bold fs-5">Cost: </span>
+        {data.cost_in_credits} credits
+      </p>
+      <p>
+        <span className="fw-bold fs-5">Length: </span>
+        {data.length} m
+      </p>
+      <p>
+        <span className="fw-bold fs-5">Max speed: </span>
+        {data.max_atmosphering_speed}
+      </p>
+      <p>
+        <span className="fw-bold fs-5">Number of passenger seats: </span>
+        {data.passengers}
+      </p>
+    </>
+  );
+}

@@ -18,6 +18,9 @@
 # misc
 .DS_Store
 *.pem
+bootstrap-themes
+fonts
+deploy.sh
 
 # debug
 npm-debug.log*
