@@ -6,6 +6,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: process.env.BASE_URL,
+  assetPrefix: process.env.BASE_URL,
 };
 
 module.exports = nextConfig;
